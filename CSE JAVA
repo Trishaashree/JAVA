@@ -1,8 +1,97 @@
 //Basic
+15.07
 public class Main
 {
 public static void main(String[]args)
 {
 System.out.printIn("Hello World");
+}
+}
+
+17.07
+public class Main
+{
+public static void main(String[] args)
+{
+int myNum=15;  //also final = final int myNUm=15;
+myNum=20;
+System.out.println(myNum);
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+int myInt=9;
+double myDouble=myInt; //Automatic casting:int to double
+System.out.println(myInt);
+System.out.println(myDouble);
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+double myDouble=9.78d;
+int myInt=(int)myDouble; //Explicit casting:double to int
+System.out.println(myDouble);
+System.out.println(myInt);
+}
+}
+
+
+public class Main
+{
+public static void main(String[] args)
+{
+int sum1=100+50;
+int sum2=sum1+250;
+int sum3=sum2+sum2;
+System.out.println(sum1);
+System.out.println(sum2);
+System.out.println(sum3);
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+int x,y;
+x=20;
+y=(x==1)?61:90;
+System.out.println("Value of y is:"+y);
+y=(x==20)?61:90;
+System.out.println("Value of y is:"+y);
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+String txt="Introduction of the class";
+System.out.println("The length of the txt string is "+txt.length());
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+String txt="Introduction Of The Class";
+System.out.println("Upper class: "+txt.toUpperCase());
+System.out.println("Lower class: "+txt.toLowerCase());
+}
+}
+
+public class Main
+{
+public static void main(String[] args)
+{
+String txt="Pealse locate where 'locate' occurs";//Finding index
+System.out.println(txt.indexOf("locate"));
 }
 }
