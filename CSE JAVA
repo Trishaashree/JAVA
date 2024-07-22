@@ -92,6 +92,9 @@ public class Main
 public static void main(String[] args)
 {
 String txt="Pealse locate where 'locate' occurs";//Finding index
+
+22.07.2024
+
 System.out.println(txt.indexOf("locate"));
 }
 }
