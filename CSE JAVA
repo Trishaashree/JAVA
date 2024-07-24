@@ -310,8 +310,7 @@ public class Main
 {
 public static void main(String[] args)
 {
-double n1,n2,result;
-char operator;
+double n1,n2,result;                                 
 Scanner input=new Scanner(System.in);
 System.out.println("Choose the operator");
 operator=input.next().charAt(0);
