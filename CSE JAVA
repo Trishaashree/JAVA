@@ -290,3 +290,51 @@ userName=myObj.nextLine();
 System.out.println("Username is "+userName);
 }
 }
+
+24.07.2024
+public class Main
+{
+public static void main(String[] args)
+{
+char[]helloArrjavac ay={'h','e','l','l','o','.'};
+String helloString=new String(helloArray);
+System.out.println(helloString);
+}
+}
+
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args)
+{
+double n1,n2,result;
+char operator;
+Scanner input=new Scanner(System.in);
+System.out.println("Choose the operator");
+operator=input.next().charAt(0);
+System.out.println("Enter the First number");
+n1=input.nextDouble();
+System.out.println("Enter the Second number");
+n2=input.nextDouble();
+switch(operator){
+case '+':
+result=n1+n2;
+System.out.println(result);
+break;
+case '-':
+result=n1-n2;
+System.out.println(result);
+break;
+case '*':
+result=n1*n2;
+System.out.println(result);
+break;
+case '/':
+result=n1/n2;
+System.out.println(result);
+break;
+}
+input.close();
+}
+}
