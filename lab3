@@ -1,0 +1,71 @@
+Armstrong Number 
+public class Main{
+  static void findArmstrong(int low, int high)
+  {
+    for (int i = low + 1; i < high; ++i) {
+      int x = i;
+      int n = 0;
+      while (x != 0) {
+        x /= 10;
+        ++n;
+      }  
+      int pow_sum = 0; 
+      x = i;
+      while (x != 0) {
+        int digit = x % 10;
+        pow_sum += Math.pow(digit, n);
+        x /= 10;
+      }   
+      if (pow_sum == i) 
+        System.out.print(i + " ");   
+    }
+  }
+  
+  public static void main(String args[])
+  {
+    int num1 = 80;
+    int num2 = 400;
+    findArmstrong(num1, num2);
+    System.out.println();
+  }
+}
+
+Square Star Pattern
+public class SquareStarPattern {
+    public static void main(String[] args) {
+        int size = 8; 
+        for (int i = 0; i < size; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+        for (int i = 0; i < size - 2; i++) {
+            System.out.print("* ");
+            for (int j = 0; j < size - 2; j++) {
+                System.out.print("  ");
+            }
+            System.out.println("*");
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
+
+LCM
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        int m=1;
+        for (int i = 1; i < Math.max(a, b); i++) {
+            if(a%i==0&&b%i==0){
+                m=m*i;
+            }
+        }
+        System.out.print(m+" ");
+    }
+}
