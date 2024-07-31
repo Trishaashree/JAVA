@@ -502,3 +502,15 @@ sb.ensureCapacity(50);//now (34*2)+2
 System.out.println(sb.capacity());//now n0
 }
 }
+
+31.07.24
+import java.util.StringTokenizer;
+public class Main
+{
+public static void main(String args[])
+{
+StringTokenizer st=new StringTokenizer("my name is Shree ,from chennai. Have some knowlegde in programimg language"," ");
+System.out.println("Total no. of tokens: "+st.countTokens());
+
+}
+}
