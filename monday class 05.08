@@ -1,0 +1,55 @@
+1) Print Odd Numbers at Even Index using Java
+
+class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        
+        for (int i = 0; i < numbers.length; i++) {
+            if (i % 2 == 0 && numbers[i] % 2 != 0) {
+                System.out.println(numbers[i]);
+            }
+        }
+    }
+}
+
+2) Write a Java program to find all pairs of elements in an array whose sum is equal to a specified number
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int targetSum = 8;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] + numbers[j] == targetSum) {
+                    System.out.println("Pair found: (" + numbers[i] + ", " + numbers[j] + ")");
+                }
+            }
+        }
+    }
+}
+
+3) Write a Java program to move all 0's to the end of an array. Maintain the relative order of the other (non-zero) array elements.
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {0, 1, 0, 3, 12, 0, 6, 0, 8};
+        System.out.println("Original array: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+        int nonZeroIndex = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] != 0) {
+                numbers[nonZeroIndex] = numbers[i];
+                nonZeroIndex++;
+            }
+        }
+        while (nonZeroIndex < numbers.length) {
+            numbers[nonZeroIndex] = 0;
+            nonZeroIndex++;
+        }
+        System.out.println("\nArray after moving zeros to the end: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
