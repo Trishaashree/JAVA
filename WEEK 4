@@ -53,3 +53,15 @@ public class Main {
             System.out.print(num + " ");
         }
     }
+
+07.08.2024
+
+java opps CLASSES AND OBJECTS
+
+public class Main{
+    int x=5;
+    public static void main(String[] args){
+        Main myObj=new Main();
+        System.out.println(myObj.x);
+    }
+}
