@@ -129,4 +129,67 @@ public class Main{
         System.out.println(myObj2.x);
     }
 } 
- 
+
+
+public class Main{
+     String fname="John";
+     String lname="Doe";
+     int age=25;
+    public static void main(String[] args){
+        Main myObj=new Main();
+        System.out.println("Name: "+myObj.fname+" "+myObj.lname);
+        System.out.println("Age: "+myObj.age);
+    }
+} 
+
+MY METHOD
+
+public class Main{
+     static void myMethod(){
+     System.out.println("Hello World!");
+     }
+    public static void main(String[] args){
+        myMethod();
+    }
+} 
+
+
+public class Main{
+     public void myStaticMethod(){
+     System.out.println("Static methods can be called without creating objects");
+     }
+    public void myPublicMethod(){
+        System.out.println("Public methods must be called by creating objects");
+    }
+    public static void main(String[] args){
+        myStaticMethod();
+        Main myObj=new Main();
+        myObj.myPublicMethod();
+    }
+} 
+
+
+public class Main{
+     public void fullThrottle(){
+     System.out.println("The car is going as fast as it can");
+     }
+    public void speed(int maxSpeed){
+        System.out.println("Max Speed: "+maxSpeed);
+    }
+    public static void main(String[] args){
+        Main myCar=new Main();
+        myCar.fullThrottle();
+        myCar.speed(200);
+    }
+} 
+
+public class Main{
+    int x;
+    public Main(){
+        x=5;
+    }
+    public static void main(String[] args){
+        Main myObj=new Main();
+        System.out.println(myObj.x);
+    }
+}
