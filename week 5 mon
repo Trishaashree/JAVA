@@ -1,0 +1,49 @@
+12.08.2024
+class Main {
+    int x;
+    public Main(int y){
+        x=y;
+    }
+    public static void main(String[] args) {
+        Main myobj=new Main(5);
+        System.out.println(myobj.x);
+    }
+}
+
+
+class Main{
+    int modelYear;
+    String modelName;
+    double modelMileage;
+    public Main(int year,String name,double mileage){
+        modelYear=year;
+        modelName=name;
+        modelMileage=mileage;
+    }
+    public static void main(String[] args){
+        Main myCar=new Main(1969,"Mustang",14.5);
+        System.out.println(myCar.modelYear+" "+myCar.modelName+" "+myCar.modelMileage);
+    }
+}
+
+
+abstract class Main{
+    public String fname="John";
+    public int age=24;
+    public abstract void study();
+}
+class Student extends Main{
+    public int graduationYear=2018;
+    public void Study(){
+        System.out.println("Studying all day long");
+    }
+}
+class Second{
+    public static void main(String[] args){
+        Student myObj=new Student();
+        System.out.println("Name: "+myObj.fname);
+        System.out.println("Age: "+myObj.age);
+        System.out.println("Graduation Year: "+myObj.graduationYear);
+        myObj.study();
+    }
+}
