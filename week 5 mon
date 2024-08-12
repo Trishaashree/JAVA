@@ -1,4 +1,4 @@
-12.08.2024
+ 12.08.2024
 class Main {
     int x;
     public Main(int y){
@@ -64,4 +64,48 @@ public class Main{
     public void setName(String newName){
         this.name=newName;
     }
+}
+
+Inheritance
+class Vehicle{
+    protected String brand="Ford";
+    public void honk(){
+        System.out.println("Tuut,tuut!");
+    }
+}
+class Car extends Vehicle{
+    private String modelName="Mustang";
+    public static void main(String[] args){
+        Car myFastCar=new Car();
+        myFastCar.honk();
+        System.out.println(myFastCar.brand+" "+myFastCar.modelName);
+    }
+}
+
+Por
+class Animal{
+    public void animalSound(){
+        System.out.println("The animal makes a sound");
+    }
+}
+class Pig extends Animal{
+    public void animalSound(){
+        System.out.println("The pig says: wee wee");
+    }
+}
+class Dog extends Animal{
+    public void animalSound(){
+        System.out.println("Thr dog says: bow wow");
+    }
+}
+class Main{
+    public static void main(String[] args){
+Animal myAnimal=new Animal();
+Animal myPig=new Pig();
+Animal myDog=new Dog();
+
+myAnimal.animalSound();
+myPig.animalSound();
+myDog.animalSound();
+}
 }
