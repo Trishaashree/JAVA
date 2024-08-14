@@ -109,3 +109,22 @@ myPig.animalSound();
 myDog.animalSound();
 }
 }
+
+
+14.08.2024
+
+Inner class
+
+class OuterClass{
+    int x=10;
+    class InnerClass{
+        int y=5;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        OuterClass myOuter=new OuterClass();
+        OuterClass.InnerClass myInner=myOuter.new InnerClass();
+        System.out.println(myInner.y+myOuter.x);
+    }
+}
